@@ -14,5 +14,4 @@ public class LetterService {
             System.out.println("CONSTANT");
         }
     }
-
 }
