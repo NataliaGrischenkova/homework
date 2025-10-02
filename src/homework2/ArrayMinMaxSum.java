@@ -13,7 +13,7 @@ public class ArrayMinMaxSum {
                 int max = array[array.length - 1];
                 return min + max;
             } else {
-                System.out.println("Массив сожержит только 1 элемент");
+                System.out.println("Массив содержит только 1 элемент");
                 return array[0];
             }
         } else {

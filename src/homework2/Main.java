@@ -13,8 +13,8 @@ public class Main {
            // int sum = ArrayMinMaxSum.getSumMinMax(array);
            // System.out.println(sum);
 
-        int[] array = {22, 11, 33, 7, 83, 113, 49};
-        int diff = EvenOddDifference.getDifference(array);
-        System.out.println(diff);
+        // int[] array = {22, 11, 33, 7, 83, 113, 49};
+        // int diff = EvenOddDifference.getDifference(array);
+        // System.out.println(diff);
     }
 }
