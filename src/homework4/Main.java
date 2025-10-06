@@ -16,8 +16,16 @@ public class Main {
         ((Director)director1).addWorker(worker3);
 
         ((Director)director2).addWorker(director1);
+        ((Director)director2).addWorker(worker4);
 
-        System.out.println(worker4);
+        System.out.println(director2);
+
+
+        System.out.println("Поиск сотрудников: ");
+        ((Director) director1).findEmployeeByName("nameW2");
+        ((Director) director1).findEmployeeByName("nameW5");
+        ((Director) director2).findEmployeeByName("nameW4");
+
 
     }
 }

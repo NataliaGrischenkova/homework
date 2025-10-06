@@ -6,7 +6,7 @@ import java.util.Objects;
 
 import static java.util.Objects.isNull;
 
-public class Director extends Employee {
+public class Director extends Employee implements Search {
 
     private Employee[] employees;
 
@@ -48,5 +48,22 @@ public class Director extends Employee {
                 ", lastName='" + lastName + '\'' +
                 ", salary=" + getSalary() +
                 '}';
+    }
+
+
+    @Override
+    public void findEmployeeByName(String name) {
+        if(isNull(employees)) {
+            System.out.println("У директора  " + this.name + " нет подчиненных.");
+            return;
+        }
+
+        for (Employee empl : employees) {
+            if (empl.name.equals(name)) {
+                System.out.println("Сотрудник " + name + " находится в подчинении у директора " + this.name);
+                return;
+            }
+        }
+        System.out.println("Сотрудник " + name + " не найден среди подчиненных директора " + this.name);
     }
 }
