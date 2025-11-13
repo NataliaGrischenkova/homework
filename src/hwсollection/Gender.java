@@ -1,4 +1,4 @@
-package homeworkCollection;
+package hwсollection;
 
 public enum Gender {
     MALE,
